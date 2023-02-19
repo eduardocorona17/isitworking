@@ -13,10 +13,13 @@ teacher = {
     'details': {
     'hometown': 'Napa Valley',
     'age': 27,
-    'degree': "masters",
+    'degree': "Masters",
     }
 }
+print(f"These are the details of {teacher['first']} {teacher['last']}: ")
 for key, value in teacher['details'].items():
-    print(f"{key} {value}")
+    print(f"{key.title()}: {value}")
+    
+
 
    
