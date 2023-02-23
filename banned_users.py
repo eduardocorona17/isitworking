@@ -20,3 +20,13 @@ num_2 = 22
 num_3 = 21
 
 print(num_1 <= num_2 or num_3 >= num_1)
+
+items = ['juice', 'milk', 'apple', 'guava']
+# if 'mango' in items:
+#     print(f"We have it!")
+# else:
+#     print("We're out!")
+if 'juice' in items:
+    print("Got it!")
+else:
+    print("Naaa")
