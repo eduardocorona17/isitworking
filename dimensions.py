@@ -28,8 +28,8 @@ for car in cars:
     else:
         print(car)
 new_users = []
-current_users = ['Eduardocorona', 'aliceabc', 'LILY', 'Clarence']
-user_name = input("Please enter a new user name (enter 'q' to finish): ")
+# current_users = ['Eduardocorona', 'aliceabc', 'LILY', 'Clarence']
+# user_name = input("Please enter a new user name (enter 'q' to finish): ")
 # while user_name != 'q':
 # if user_name in current_users:
 #     print(f"Error! {user_name} is already used")
@@ -47,5 +47,14 @@ user_name = input("Please enter a new user name (enter 'q' to finish): ")
 #         new_users.append(user_name)
 # print(current_users)
         
+# requested_topping = 'mushrooms'
+# if requested_topping != 'anchovies':
+#     print("Hold the anchovies!")
 
-
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+if 'mushrooms' in requested_toppings:
+    print("Yee")
+else: print("Nee")
+if 'pepperoni' in requested_toppings:
+    print("Yee")
+else: print("Nee")
