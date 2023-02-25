@@ -20,3 +20,11 @@ elif age >= 65:
 #     print("Here we have an adult.")
 # elif age > 65:
 #     print("Its over bro.")
+favorite_fruits = ['Guava', 'Grapes', 'Nectarines']
+
+if 'Guava' in favorite_fruits:
+    print("Your really like Guava!")
+if 'Grapes' in favorite_fruits:
+    print("You really like grapes!")
+if 'Nectarines' in favorite_fruits:
+    print("Those are the best of all tbh.")
