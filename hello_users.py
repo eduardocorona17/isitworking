@@ -18,7 +18,6 @@ for user in new_users:
 original_nums = list(range(1,10))
 
 for num in original_nums:
-    
     if num == 1 in original_nums:
         print(f"{num}st")
     elif num == 2:
@@ -26,6 +25,7 @@ for num in original_nums:
     elif num == 3:
         print(f"{num}rd")
     else: print(f"{num}th")
+    
 
 # for num in original_nums[3:10]:
 #     print(f"{num}th")
