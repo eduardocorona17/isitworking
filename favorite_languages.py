@@ -30,3 +30,27 @@ if 'erin' not in favorite_languages.keys():
 # print(speed_value)
 # for name, language in favorite_languages.items():
 #     print(f"{name.title()}'s favorite language is {language.title()}")
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thanks for taking our poll!")
+
+print("The following languages have been mentioned:")
+for language in sorted(set(favorite_languages.values())):
+    print(f"{language.title()}")
+
+lenguajes = {"python", "ruby", "assembly", "c++", "python", "assembly"} # A set is wrapped in curlies, separated by commas
+print(sorted(lenguajes))
+
+glossary = {
+    'set()': 'Returns unique items in a list or dict.',
+    'sorted()': 'Returns values in asending order, temporarily.',
+    'sort()': 'Permanently sorts a list in ascending order.',
+    'title()': 'Return a string capitalized.',
+    'keys()': 'Loop through only the keys in a dict.',
+    'values()': 'Loop through values in a dict only.',
+    'upper()': 'Capitalize all letters in a string.',
+    'lower()': 'Lower all letters in a string.',
+    'range()': 'Return a range of integers (beginning[inclusive], ending[exclusive], step[optional])',
+    }
+    
+for term, definition in sorted(glossary.items()):
+    print(f"Term: {term} \nDefinition: {definition.title()}")
