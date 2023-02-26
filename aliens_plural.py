@@ -23,3 +23,10 @@ for alien in more_aliens[:3]:
         alien['points'] = 10
 for alien in more_aliens[:5]:
     print(alien)
+
+what = {'name': 'eduardo', 'sex': 'male', 'birth': 'March 1991'}
+who = {'name': 'jane', 'sex': 'female'}
+how = [what, who]
+print(how[0]['birth'])
+print(how[1].get('birth', 'No Birthdate to show for.'))
+print(how[0].get('birth'))
