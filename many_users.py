@@ -42,3 +42,42 @@ family = [eddie, lori]
 
 for person in family:
     print(person)
+
+sammi = {
+    'type': 'dog',
+    'owner': 'chepe',
+}
+luna = {
+    'type': 'dog',
+    'owner': 'juni',
+}
+
+cities = {
+    'berlin': {
+    'country': 'germany',
+    'population': 3650000,
+    'fact': 'a lot of trees',
+    },
+
+    'oia': {
+    'country': 'greece',
+    'population': 'less than 10k',
+    'fact': 'located in island of Santorini',
+    },
+
+    'haifa': {
+    'country': 'israel',
+    'population': 279000,
+    'fact': 'super dope city',
+    },
+}
+
+for city, details in cities.items():
+    print(f"\nCity: {city.title()} ")
+    country = f"{details['country']}"
+    population = f"{details['population']}"
+    key_fact = f"{{details['fact']}}"
+    print(f"Country: {country.title()}")
+    print(f"Information: {population.title()} \nFact: {details['fact'].title()}")
+    # for info in details:
+    #     print(f"\n{info.title()}")
