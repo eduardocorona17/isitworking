@@ -13,14 +13,6 @@ class Car:
         long_name = f"{self.make} {self.model} {self.year}"
         return long_name.title()
     
-    def is_amg(self, special):
-        """Tells if it is an AMG or not"""
-        if special == 'AMG':
-            special = self.special
-            print(f"This {self.make} is an AMG")
-        else:
-            print(f"This {self.make} is not an AMG")    
-
     def read_odometer(self):
         """Print a statement showing the car's mileage."""
         print(f"This car has {self.odometer_reading} miles on it.")
@@ -36,16 +28,3 @@ class Car:
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
-            
-
-my_new_car = Car('audi', 'r8', 2023)
-amg = Car('Benz', 'CLA', 2023)
-print(my_new_car.get_descriptive_name())
-# my_new_car.odometer_reading = 23
-my_new_car.update_odometer(25)
-my_new_car.read_odometer()
-amg.is_amg('AMG')
-amg.update_odometer(100)
-amg.read_odometer()
-amg.increment_odometer(100)
-amg.read_odometer()
