@@ -1,0 +1,3 @@
+In Python you can do a lot of things lol.
+In Python you can read large files.
+In Python you can create websites too.
