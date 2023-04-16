@@ -1,5 +1,3 @@
-
-
 filename = 'files_exceptions/guest_book.txt'
 while True:
     name = input("What is your name? enter 'quit' to stop. ")
@@ -8,5 +6,4 @@ while True:
     else:
         print(f"Hello, {name}!")
         with open(filename, 'a') as object_file:
-            object_file.write(f"{name.title()} visited on today\n")
-            
+            object_file.write(f"{name.title()} visited today\n")
