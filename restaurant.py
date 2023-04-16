@@ -59,43 +59,43 @@ rest.people_served()
 rest.increment_number_served(117)
 rest.people_served()
 
-class Users:
-    def __init__(self, first_name, last_name, location, age, username):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.location = location
-        self.age = age
-        self.username = username
-        self.login_attempts = 0
+# class Users:
+#     def __init__(self, first_name, last_name, location, age, username):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.location = location
+#         self.age = age
+#         self.username = username
+#         self.login_attempts = 0
 
-    def describe_user(self):
-        print(f"The following info is collected from the user:\n{self.first_name} {self.last_name}\n{self.location}\n{self.age}\n{self.username}")
+#     def describe_user(self):
+#         print(f"The following info is collected from the user:\n{self.first_name} {self.last_name}\n{self.location}\n{self.age}\n{self.username}")
     
-    def increment_login_attempts(self):
-        self.login_attempts += 1
-        print(f"{self.username} logged in {self.login_attempts} times.")
+#     def increment_login_attempts(self):
+#         self.login_attempts += 1
+#         print(f"{self.username} logged in {self.login_attempts} times.")
     
-    def reset_logins(self):
-        self.login_attempts = 0
-        print(f"Attempts to log in have been reset to {self.login_attempts}")
+#     def reset_logins(self):
+#         self.login_attempts = 0
+#         print(f"Attempts to log in have been reset to {self.login_attempts}")
 
-class Admin(Users):
-    def __init__(self, first_name, last_name, location, age, username):
-        super().__init__(first_name, last_name, location, age, username)
-        self.priviliges = ['Can add post.', 'Can ban user.', 'Can delete post.']
+# class Admin(Users):
+#     def __init__(self, first_name, last_name, location, age, username):
+#         super().__init__(first_name, last_name, location, age, username)
+#         self.priviliges = ['Can add post.', 'Can ban user.', 'Can delete post.']
     
-    def show_priviliges(self):
-        """Shows Admins privileges."""
-        print(f"{self.username.title()} has the following priviliges: ")
-        for p in self.priviliges:
-            print(f"{p}")
+#     def show_priviliges(self):
+#         """Shows Admins privileges."""
+#         print(f"{self.username.title()} has the following priviliges: ")
+#         for p in self.priviliges:
+#             print(f"{p}")
 
 
-user = Users('Ed', 'Corona', 'Napa, CA', 32, 'Eduarthough')
-user.describe_user()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.reset_logins()
-ad = Admin('Ed', 'Co', 'Honolulu', 32, 'edudu')
-ad.show_priviliges()
+# user = Users('Ed', 'Corona', 'Napa, CA', 32, 'Eduarthough')
+# user.describe_user()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.reset_logins()
+# ad = Admin('Ed', 'Co', 'Honolulu', 32, 'edudu')
+# ad.show_priviliges()
