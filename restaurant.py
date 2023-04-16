@@ -28,7 +28,19 @@ class Restaurant:
         self.number_served += people
         # print(f"So far they have now served {self.number_served} people.")
 
+class IceCreamStand(Restaurant):
+    def __init__(self, name, cuisine):
+        super().__init__(name, cuisine)
+        self.flavors = ['Vanilla', 'Chocolate']
 
+    def show_flavors(self):
+        print(f"{self.name} serves the following flavors: ")
+        for flavor in self.flavors:
+            print(f"{flavor}")
+
+stand = IceCreamStand('Joes', 'Creamery')
+
+stand.show_flavors()
 restaurant = Restaurant('Bear', 'Elemental')
 rival_restaurant = Restaurant('ADS', 'American')
 third_rest = Restaurant('SolBar', 'New American')
