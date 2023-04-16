@@ -1,0 +1,4 @@
+I love programming. I think Python is cool.
+I should have leaned JS and React first though lol.
+I also love finding meaning in large datasets.
+I love creating apps that can run in a browser.
