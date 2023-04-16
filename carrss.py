@@ -36,16 +36,35 @@ class Car:
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
+
+class Battery:
+    """A simple attempt at describing an electric vehicles battery."""
+    def __init__(self, battery_size=75):
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def get_range(self):
+        """Print a statement about the range a battery gets."""
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+        print(f"This car can go about {range} miles on a full charge.")
+
+    def upgrade_method(self):
+        """Upgrades battery size if less than 100."""
+        if self.battery_size < 100:
+            print(f"Battery size will be upgraded to be 100-kHw.")
+            self.battery_size = 100
+    def new_battery(self):
+        print(f"Battery size upgraded to {self.battery_size}-kWh.")
             
 
-my_new_car = Car('audi', 'r8', 2023)
-amg = Car('Benz', 'CLA', 2023)
-print(my_new_car.get_descriptive_name())
-# my_new_car.odometer_reading = 23
-my_new_car.update_odometer(25)
-my_new_car.read_odometer()
-amg.is_amg('AMG')
-amg.update_odometer(100)
-amg.read_odometer()
-amg.increment_odometer(100)
-amg.read_odometer()
+
+class ElectricCar(Car):
+    """Represents the aspects specific to an Electric car."""
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery = Battery()

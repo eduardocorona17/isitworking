@@ -79,6 +79,17 @@ class Users:
         self.login_attempts = 0
         print(f"Attempts to log in have been reset to {self.login_attempts}")
 
+class Admin(Users):
+    def __init__(self, first_name, last_name, location, age, username):
+        super().__init__(first_name, last_name, location, age, username)
+        self.priviliges = ['Can add post.', 'Can ban user.', 'Can delete post.']
+    
+    def show_priviliges(self):
+        """Shows Admins privileges."""
+        print(f"{self.username.title()} has the following priviliges: ")
+        for p in self.priviliges:
+            print(f"{p}")
+
 
 user = Users('Ed', 'Corona', 'Napa, CA', 32, 'Eduarthough')
 user.describe_user()
@@ -86,3 +97,5 @@ user.increment_login_attempts()
 user.increment_login_attempts()
 user.increment_login_attempts()
 user.reset_logins()
+ad = Admin('Ed', 'Co', 'Honolulu', 32, 'edudu')
+ad.show_priviliges()
